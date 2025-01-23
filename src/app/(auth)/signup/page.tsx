@@ -46,7 +46,7 @@ export default function SignUp() {
   });
 
   return (
-    <div className="relative min-h-screen bg-cover bg-center bg-[url('/backgrounds/bg-pikachu.jpg')]">
+    <div className="relative min-h-screen bg-cover bg-center bg-[url('/backgrounds/bg-pikachu.jpg')] px-4">
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative z-10 flex items-center justify-center min-h-screen">
         <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">

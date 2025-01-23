@@ -1,5 +1,5 @@
-import Image from "next/image";
 import React, { ReactNode } from "react";
+import LoadingImage from "./ImageLoader";
 
 interface CardProps {
   imageUrl: string;
@@ -22,10 +22,10 @@ const Card: React.FC<CardProps> = ({
       }`}
     >
       <div className="relative flex justify-center items-center h-32">
-        <Image src={imageUrl} alt={title} layout="fill" objectFit="contain" />
+        <LoadingImage src={imageUrl} alt={title} />
       </div>
-      <div className="p-4 bg-[#316DCF]">
-        <h2 className="font-bold mb-2 text-md text-white group-hover:underline capitalize">
+      <div className="px-4 py-1 bg-[#316DCF]">
+        <h2 className="font-bold mb-2 text-md text-white group-hover:underline capitalize text-center">
           {title}
         </h2>
         {descriptionComponent ? descriptionComponent : null}
