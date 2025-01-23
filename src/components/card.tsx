@@ -12,13 +12,7 @@ const Card: React.FC<CardProps> = ({ imageUrl, title, provider }) => {
   return (
     <div className="bg-white rounded-lg shadow-xl overflow-hidden relative font-[family-name:var(--font-poppins)] cursor-pointer group transition-all duration-300 ease-in-out">
       <div className="relative flex justify-center items-center h-32">
-        <Image
-          src={imageUrl}
-          alt={title}
-          width={125}
-          height={125}
-          className="object-contain"
-        />
+        <Image src={imageUrl} alt={title} layout="fill" objectFit="contain" />
       </div>
       <div className="p-4 bg-[#316DCF]">
         <h2 className="font-bold mb-2 text-md text-white group-hover:underline">
