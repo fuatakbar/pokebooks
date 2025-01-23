@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function LoginPage() {
   return (
@@ -7,13 +8,15 @@ export default function LoginPage() {
       <div className="relative z-10 flex items-center justify-center min-h-screen">
         <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
           <div className="mb-10">
-            <Image
-              className="mx-auto"
-              src="/logos/logo-pokeapi.png"
-              width={150}
-              height={150}
-              alt="Poke API"
-            />
+            <Link href="/">
+              <Image
+                className="mx-auto"
+                src="/logos/logo-pokeapi.png"
+                width={150}
+                height={150}
+                alt="Poke API"
+              />
+            </Link>
           </div>
           <form className="space-y-4">
             <div>
@@ -58,12 +61,12 @@ export default function LoginPage() {
           <div className="mt-6 text-center">
             <p className="text-sm text-gray-600">
               Belum punya buat akun?{" "}
-              <a
-                href="#"
+              <Link
+                href="/signup"
                 className="font-medium text-blue-600 hover:text-blue-700"
               >
                 Buat Akun
-              </a>
+              </Link>
             </p>
           </div>
         </div>
