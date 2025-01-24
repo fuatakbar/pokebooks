@@ -43,7 +43,7 @@ export default function Home() {
       <div className="grid grid-rows-[20px_1fr_20px] items-start justify-items-center min-h-screen p-8 pb-20 pt-[75px] sm:p-20 font-[family-name:var(--font-poppins)] bg-white">
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start text-gray-500">
           <div className="container mx-auto p-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8 gap-x-4 gap-y-8">
+            <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 xl:grid-cols-8 gap-x-4 gap-y-8">
               {pokeList?.results?.map((val) => (
                 <Card
                   imageUrl={`https://img.pokemondb.net/artwork/${val.name}.jpg`}

@@ -13,11 +13,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({ src }) => {
     }
   }, []);
 
-  return (
-    <div className="p-4 bg-white rounded-lg shadow-md">
-      <audio ref={audioRef} src={src} controls />
-    </div>
-  );
+  return <audio ref={audioRef} src={src} controls />;
 };
 
 export default AudioPlayer;

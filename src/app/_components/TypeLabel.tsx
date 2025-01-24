@@ -30,7 +30,7 @@ const TypeLabel: React.FC<TypeLabelProps> = ({ type }) => {
 
   return (
     <span
-      className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${colorClass} mr-2`}
+      className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${colorClass} mr-2 my-1`}
     >
       {type.charAt(0).toUpperCase() + type.slice(1)}{" "}
     </span>

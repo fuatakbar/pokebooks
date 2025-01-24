@@ -42,25 +42,25 @@ const Navbar = () => {
         <div>
           {user ? (
             <div className="flex items-center">
-              <span className="text-gray-500 inline-block mr-3 tracking-wide text-sm">
+              <span className="text-gray-500 mr-3 tracking-wide text-sm hidden xs:inline-block">
                 Halo, {user.email ? getEmailName(user.email) : "Guest"}
               </span>
               <button
                 onClick={handleLogout}
                 type="button"
-                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300"
+                className="bg-blue-500 text-white px-2 py-2 rounded hover:bg-blue-600 transition duration-300 text-sm"
               >
                 Keluar
               </button>
             </div>
           ) : (
             <>
-              <span className="text-gray-500 inline-block mr-3 tracking-wide text-sm">
+              <span className="text-gray-500 mr-3 tracking-wide text-sm hidden xs:inline-block">
                 Akses detail? &rarr;
               </span>
               <Link
                 href="/login"
-                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300"
+                className="bg-blue-500 text-white px-2 py-2 rounded hover:bg-blue-600 transition duration-300 text-sm"
               >
                 Masuk
               </Link>

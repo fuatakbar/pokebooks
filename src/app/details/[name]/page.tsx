@@ -93,7 +93,7 @@ const DetailPage = () => {
               <div className="p-4 text-gray-700">
                 <Stats stats={details?.stats || []} />
               </div>
-              <div className="p-4 text-gray-700 grid grid:cols-1 md:grid-cols-1 xl:grid-cols-1 gap-y-6 gap-x-4">
+              <div className="p-0 sm:p-4 text-gray-700 grid grid:cols-1 md:grid-cols-1 xl:grid-cols-1 gap-y-6 gap-x-4">
                 <div>
                   <h1 className="text-2xl font-bold mb-4">Info / Stats</h1>
                   <table className="w-full border-collapse">
@@ -168,7 +168,7 @@ const DetailPage = () => {
                     </tbody>
                   </table>
                 </div>
-                <div className=" text-gray-700">
+                <div className=" text-gray-700 overflow-x-scroll xs:overflow-visible">
                   <h1 className="text-2xl font-bold mb-2">Cries</h1>
                   {details?.cries?.latest && (
                     <div className="my-2">
