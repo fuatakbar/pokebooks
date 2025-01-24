@@ -11,8 +11,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Pokemon - Pasar Trainer",
-  description: "Test App for Pasar Trainer to show Pokeapi data",
+  title: "PokeBooks - Find Your Pokemon!",
+  description: "Find Your Pokemon Here!",
 };
 
 export default function RootLayout({

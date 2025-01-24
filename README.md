@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# PokeBooks
 
-First, run the development server:
+## Versi
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1.0.0
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deskripsi
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Proyek ini adalah aplikasi berbasis Next.js yang menggunakan berbagai teknologi modern untuk membangun antarmuka pengguna yang responsif dan interaktif.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Skrip
 
-## Learn More
+-   `dev`: Menjalankan aplikasi dalam mode pengembangan menggunakan Turbopack.
+-   `build`: Membangun aplikasi untuk produksi.
+-   `start`: Menjalankan aplikasi dalam mode produksi.
+-   `lint`: Memeriksa kode untuk kesalahan menggunakan ESLint.
 
-To learn more about Next.js, take a look at the following resources:
+## Dependensi
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   `axios`: ^1.7.9 - Untuk melakukan permintaan HTTP.
+-   `firebase`: ^11.2.0 - Untuk integrasi dengan Firebase.
+-   `next`: 15.1.5 - Framework React untuk membangun aplikasi web.
+-   `react`: ^19.0.0 - Library untuk membangun antarmuka pengguna.
+-   `react-dom`: ^19.0.0 - Untuk interaksi dengan DOM.
+-   `react-hook-form`: ^7.54.2 - Untuk mengelola formulir dengan mudah.
+-   `react-toastify`: ^11.0.3 - Untuk menampilkan notifikasi.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## DevDependensi
 
-## Deploy on Vercel
+-   `@eslint/eslintrc`: ^3 - Konfigurasi ESLint.
+-   `@types/axios`: ^0.14.4 - Tipe untuk Axios.
+-   `@types/node`: ^20 - Tipe untuk Node.js.
+-   `@types/react`: ^19 - Tipe untuk React.
+-   `@types/react-dom`: ^19 - Tipe untuk React DOM.
+-   `eslint`: ^9 - Linter untuk JavaScript.
+-   `eslint-config-next`: 15.1.5 - Konfigurasi ESLint untuk Next.js.
+-   `postcss`: ^8 - Alat untuk memproses CSS.
+-   `tailwindcss`: ^3.4.1 - Framework CSS untuk desain yang responsif.
+-   `typescript`: ^5 - Bahasa pemrograman yang dikompilasi ke JavaScript.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Cara Memulai
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1.  Clone repositori ini.
+2.  Jalankan  `npm install`  untuk menginstal dependensi.
+3.  Jalankan  `npm run dev`  untuk memulai aplikasi dalam mode pengembangan.
+
+## Struktur Proyek
+
+Berikut adalah struktur proyek `pokemon-pasartrainer`:
+
+`pokemon-pasartrainer/  
+├── components/  
+│   ├── AudioPlayer.tsx  
+│   ├── Stats.tsx  
+│   ├── TypeLabel.tsx  
+│   └── ...  
+├── app/  
+│   ├── page.tsx  
+│   ├── details/  
+│   │   └── [name]/  
+│   │       └── page.tsx  
+│   └── ...  
+├── public/  
+│   └── ...  
+├── styles/  
+│   └── globals.css  
+├── .eslintrc.json  
+├── .gitignore  
+├── next.config.js  
+├── package.json  
+├── README.md  
+└── tsconfig.json` 
+
+## Kontribusi
+
+Kontribusi sangat dihargai! Jika Anda ingin berkontribusi ke proyek ini, silakan ikuti langkah-langkah berikut:
+
+1.  Fork repositori ini.
+2.  Buat cabang baru (`git checkout -b feature/nama-fitur`).
+3.  Lakukan perubahan yang Anda inginkan.
+4.  Commit perubahan Anda (`git commit -am 'Add some feature'`).
+5.  Push ke cabang Anda (`git push origin feature/nama-fitur`).
+6.  Buka Pull Request.
+
+## Lisensi
+
+Proyek ini dilisensikan di bawah Lisensi MIT. Lihat file [LICENSE](https://www.superai.id/LICENSE) untuk detail lebih lanjut.
+
+## Kontak
+
+Jika Anda memiliki pertanyaan atau masalah, silakan hubungi:
+
+-   Email:  [fuatakbars@gmail.com](mailto:fuatakbars@gmail.com])
+-   GitHub:  [github.com/fuatakbar](https://github.com/fuatakbar)
