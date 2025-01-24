@@ -1,21 +1,21 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
-interface LoadingImageProps {
+interface ImageLoaderProps {
   src: string;
   alt: string;
 }
 
-const LoadingImage: React.FC<LoadingImageProps> = ({ src, alt }) => {
+const ImageLoader: React.FC<ImageLoaderProps> = ({ src, alt }) => {
   const [loading, setLoading] = useState(true);
 
   return (
     <div className="relative w-full h-full">
       {loading && (
         <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
-          <div className="loader border-4 border-t-4 border-blue-500 rounded-full w-10 h-10 animate-spin">
+          <div className="loader border-4 border-t-4 border-blue-500 rounded-full w-10 h-10 animate-spin relative">
             <Image
               src="/icons/icon-load.svg"
               alt="Load"
@@ -41,4 +41,4 @@ const LoadingImage: React.FC<LoadingImageProps> = ({ src, alt }) => {
   );
 };
 
-export default LoadingImage;
+export default ImageLoader;

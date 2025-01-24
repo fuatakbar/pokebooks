@@ -5,3 +5,11 @@ export function getEmailName(email: string): string {
     }
     return email.substring(0, atIndex);
 }
+
+export function pokeNumbering(number: number | string): string {
+    const num = Number(number);
+    if (isNaN(num)) {
+        throw new Error("Invalid number input");
+    }
+    return num.toString().padStart(4, '0');
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { useAuth } from "@/context/AuthContext";
 import { auth } from "@/firebase/initFirebase";
@@ -34,21 +34,16 @@ const Navbar = () => {
               src="/logos/logo-pokemon.png"
               alt="PokeAPI"
               className="mr-2"
-              width={100}
-              height={100}
+              width={125}
+              height={50}
             />
           </Link>
         </div>
-        {/* <div className="hidden md:flex text-gray-500">
-          <span className="tracking-wide">
-            Akses Informasi Pokemon Kesukaanmu
-          </span>
-        </div> */}
         <div>
           {user ? (
             <div className="flex items-center">
-              <span className="text-gray-500 inline-block mr-3 tracking-wide">
-                Halo, {getEmailName(user.email)}
+              <span className="text-gray-500 inline-block mr-3 tracking-wide text-sm">
+                Halo, {user.email ? getEmailName(user.email) : "Guest"}
               </span>
               <button
                 onClick={handleLogout}
@@ -60,8 +55,8 @@ const Navbar = () => {
             </div>
           ) : (
             <>
-              <span className="text-gray-500 inline-block mr-3 tracking-wide">
-                Ingin melihat detail? &rarr;
+              <span className="text-gray-500 inline-block mr-3 tracking-wide text-sm">
+                Akses detail? &rarr;
               </span>
               <Link
                 href="/login"

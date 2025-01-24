@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { signInWithEmailAndPassword } from "firebase/auth";
@@ -45,13 +45,13 @@ export default function LoginPage() {
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative z-10 flex items-center justify-center min-h-screen">
         <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-          <div className="mb-10">
+          <div className="mb-10 flex justify-center">
             <Link href="/">
               <Image
-                className="mx-auto"
+                className="inline-block"
                 src="/logos/logo-pokeapi.png"
-                width={150}
-                height={150}
+                width={125}
+                height={50}
                 alt="Poke API"
               />
             </Link>
