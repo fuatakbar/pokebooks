@@ -1,15 +1,15 @@
 "use client";
 
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import Footer from "@/app/_components/Footer";
+import Navbar from "@/app/_components/Navbar";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { pokeNumbering } from "@/helpers";
-import Stats from "@/components/Stats";
+import { pokeNumbering } from "@/app/_helpers";
+import Stats from "@/app/_components/Stats";
 import Image from "next/image";
-import TypeLabel from "@/components/TypeLabel";
-import AudioPlayer from "@/components/AudioPlayer";
+import TypeLabel from "@/app/_components/TypeLabel";
+import AudioPlayer from "@/app/_components/AudioPlayer";
 
 interface PokeStat {
   base_stat: number;

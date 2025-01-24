@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { AuthProvider } from "@/context/AuthContext";
+import { AuthProvider } from "@/app/_context/AuthContext";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ToastContainer, Bounce } from "react-toastify";

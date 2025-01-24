@@ -4,7 +4,7 @@ import Image from "next/legacy/image";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "@/firebase/initFirebase";
+import { auth } from "@/app/_firebase/initFirebase";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 

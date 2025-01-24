@@ -2,10 +2,10 @@
 
 import Image from "next/legacy/image";
 import Link from "next/link";
-import { useAuth } from "@/context/AuthContext";
-import { auth } from "@/firebase/initFirebase";
+import { useAuth } from "@/app/_context/AuthContext";
+import { auth } from "@/app/_firebase/initFirebase";
 import { toast } from "react-toastify";
-import { getEmailName } from "@/helpers";
+import { getEmailName } from "@/app/_helpers";
 import { useRouter } from "next/navigation";
 
 const Navbar = () => {

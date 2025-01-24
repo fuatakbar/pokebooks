@@ -1,12 +1,12 @@
 "use client";
 
-import Card from "@/components/Card";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import Card from "@/app/_components/Card";
+import Footer from "@/app/_components/Footer";
+import Navbar from "@/app/_components/Navbar";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useAuth } from "@/context/AuthContext";
+import { useAuth } from "@/app/_context/AuthContext";
 
 export default function Home() {
   const { isAuthenticated } = useAuth();
